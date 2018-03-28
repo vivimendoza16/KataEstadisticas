@@ -7,3 +7,6 @@ class EstadisticasTest(TestCase):
     def test_Estadisticas(self):
         self.assertEqual(Calculos().Estadisticas(""),[0], "arreglo vacio")
 
+    def test_Estadisticas_unNumero(self):
+        self.assertEqual(Calculos().Estadisticas("5"),[1], "un elemento")
+
