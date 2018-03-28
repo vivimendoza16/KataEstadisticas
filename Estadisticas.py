@@ -6,5 +6,4 @@ class Calculos:
         if cadena == "":
             return ([0])
         else:
-            print len(cadena)
             return([len(cadena)])
