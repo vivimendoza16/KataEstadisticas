@@ -11,7 +11,7 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Calculos().Estadisticas("5"),[1,5], "arreglo elementos,minimo un elemento")
 
     def test_Estadisticas_dosNumeros(self):
-        self.assertEqual(Calculos().Estadisticas("5,2"),[2], "dos elementos")
+        self.assertEqual(Calculos().Estadisticas("5,2"),[2,2], "arreglo elementos,minimo dos elementos")
 
     def test_Estadisticas_Numneros(self):
         self.assertEqual(Calculos().Estadisticas("5,2,11,6,3"),[5], "N elementos")
