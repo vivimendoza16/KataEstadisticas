@@ -14,11 +14,7 @@ class Calculos:
             maximo=max(numeros0)
             for num in numeros0:
                 suma=suma+num
-                print suma
-                cociente=3/2
-                print cociente
                 promedio=suma/cantidad
-                print promedio
             return([cantidad,minimo,maximo,promedio])
         else:
             return([len(cadena),int(min(cadena)),int(max(cadena)),int(cadena)])
