@@ -3,7 +3,7 @@ __author__ = 'cv.hernandez,vc.mendoza'
 class Calculos:
 
     def Estadisticas (self,cadena):
-        suma=0;
+        suma=0
         if cadena == "":
             return ([0,0,0,0])
         elif "," in cadena:
@@ -12,6 +12,13 @@ class Calculos:
             cantidad=len(numeros0)
             minimo=min(numeros0)
             maximo=max(numeros0)
-            return([cantidad,minimo,maximo])
+            for num in numeros0:
+                suma=suma+num
+                print suma
+                cociente=3/2
+                print cociente
+                promedio=suma/cantidad
+                print promedio
+            return([cantidad,minimo,maximo,promedio])
         else:
             return([len(cadena),int(min(cadena)),int(max(cadena)),int(cadena)])
