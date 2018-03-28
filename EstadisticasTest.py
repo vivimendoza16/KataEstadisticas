@@ -10,3 +10,5 @@ class EstadisticasTest(TestCase):
     def test_Estadisticas_unNumero(self):
         self.assertEqual(Calculos().Estadisticas("5"),[1], "un elemento")
 
+    def test_Estadisticas_dosNumeros(self):
+        self.assertEqual(Calculos().Estadisticas("5,2"),[2], "dos elementos")
