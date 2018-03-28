@@ -12,5 +12,5 @@ class Calculos:
             minimo=min(numeros0)
             return([cantidad,minimo])
         else:
-            print max(cadena)
+
             return([len(cadena),int(min(cadena)),int(max(cadena))])
