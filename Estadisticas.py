@@ -11,4 +11,7 @@ class Calculos:
 
             return([len(numeros2)])
         else:
-            return([len(cadena)])
+            print cadena
+            print min(cadena)
+            print int(min(cadena))
+            return([len(cadena),int(min(cadena))])
