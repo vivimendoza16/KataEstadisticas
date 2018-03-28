@@ -6,9 +6,10 @@ class Calculos:
         if cadena == "":
             return ([0,0])
         elif "," in cadena:
-            numeros=cadena.split(',')
-            numeros2=tuple(numeros)
-
-            return([len(numeros2)])
+            numeros1=len((int(cadena[0]),int(cadena[2])))
+            numeros2=min(int(cadena[0]),int(cadena[2]))
+            print numeros1
+            print numeros2
+            return([numeros1,numeros2])
         else:
             return([len(cadena),int(min(cadena))])
