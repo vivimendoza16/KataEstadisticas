@@ -4,7 +4,7 @@ class Calculos:
 
     def Estadisticas (self,cadena):
         if cadena == "":
-            return ([0])
+            return ([0,0])
         elif "," in cadena:
             numeros=cadena.split(',')
             numeros2=tuple(numeros)
